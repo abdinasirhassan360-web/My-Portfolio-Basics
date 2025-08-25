@@ -13,9 +13,8 @@ h2 {
     color: #FFBA49;
     font-family: Raleway, sans-serif;
 }
-/* ...existing code... */
 nav {
-    background-color: #222;
+    background-color: #1A374D; /* Contrasting color */
     padding: 1em 0;
     position: sticky;
     top: 0;
@@ -26,9 +25,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Aligns items to the right */
     margin: 0;
-    padding: 0;
+    padding: 0 2em; /* Adds space from the right edge */
 }
 
 nav ul li {
