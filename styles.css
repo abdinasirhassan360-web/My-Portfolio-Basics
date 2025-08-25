@@ -1,6 +1,9 @@
-
 body {
     background-color: #0B2027;
+}
+nav {
+    background-color: #0B2027;
+    padding: 1em;
 }
 h1 {
     color: #D3FFE9;
@@ -9,4 +12,37 @@ h1 {
 h2 {
     color: #FFBA49;
     font-family: Raleway, sans-serif;
+}
+/* ...existing code... */
+nav {
+    background-color: #222;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
 }
