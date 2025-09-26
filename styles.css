@@ -16,9 +16,10 @@ nav {
 }
 
 .intro {
-    margin-top: 50px;     /* space from the top */
-    margin-left: 150px;   /* 3x the top spacing */
+    padding-top: 50px;
+    margin-left: 150px;
 }
+
 
 .intro h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -31,6 +32,7 @@ nav {
     color: #db932c;
     margin: 0;
 }
+
 
 nav ul {
     list-style: none;
