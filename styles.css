@@ -1,20 +1,13 @@
 body {
-    background-color: #0B2027;
+    background-color: #785b23; /* restaurant background */
+    color: #db932c;            /* restaurant text color */
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 nav {
-    background-color: #0B2027;
-    padding: 1em;
-}
-h1 {
-    color: #D3FFE9;
-    font-family: Raleway, sans-serif;
-}
-h2 {
-    color: #FFBA49;
-    font-family: Raleway, sans-serif;
-}
-nav {
-    background-color: #1A374D; /* Contrasting color */
+    background-color: #202020; /* charcoal nav */
     padding: 1em 0;
     position: sticky;
     top: 0;
@@ -22,12 +15,23 @@ nav {
     z-index: 1000;
 }
 
+h1 {
+    color: white; /* matches restaurant title first word */
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+h2 {
+    color: #db932c; /* golden-orange accent */
+    font-family: 'Nunito', sans-serif;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
+    justify-content: flex-end;
     margin: 0;
-    padding: 0 2em; /* Adds space from the right edge */
+    padding: 0 2em;
 }
 
 nav ul li {
@@ -35,13 +39,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #db932c; /* golden-orange links */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
+    font-family: 'Nunito', sans-serif;
     transition: color 0.2s;
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: white; /* clean contrast hover */
 }
