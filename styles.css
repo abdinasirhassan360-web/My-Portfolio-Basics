@@ -15,15 +15,21 @@ nav {
     z-index: 1000;
 }
 
-h1 {
-    color: white; /* matches restaurant title first word */
+.intro {
+    margin-top: 50px;     /* space from the top */
+    margin-left: 150px;   /* 3x the top spacing */
+}
+
+.intro h1 {
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     margin: 0;
 }
 
-h2 {
-    color: #db932c; /* golden-orange accent */
+.intro h2 {
     font-family: 'Nunito', sans-serif;
+    color: #db932c;
+    margin: 0;
 }
 
 nav ul {
