@@ -16,21 +16,34 @@ nav {
 }
 
 .intro {
-    padding-top: 50px;
-    margin-left: 150px;
+    padding: 100px 50px;
+    text-align: center;
+    background-image: url('images/background-image-portfolio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .intro h1 {
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    font-size: 3em;
     margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* makes text readable */
 }
 
 .intro h2 {
     font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0 0;
     color: #db932c;
-    margin: 0;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 
