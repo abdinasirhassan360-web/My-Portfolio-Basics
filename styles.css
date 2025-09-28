@@ -99,6 +99,46 @@ nav ul li a:hover {
   }
 }
 
+.headshot {
+  width: 150px;         /* default size for phones */
+  height: 150px;
+  border-radius: 50%;   /* makes it a circle */
+  object-fit: cover;    /* crops neatly without distortion */
+  border: 3px solid #fff; /* white border around it */
+  margin-top: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* soft shadow for depth */
+  margin-bottom: 1rem;
+}
+/* Layout for larger screens */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  flex-wrap: wrap; /* so it stacks on small screens */
+}
+
+.about-text h1,
+.about-text h2 {
+  margin: 0.5rem 0;
+}
+/* Tablet and up */
+@media (min-width: 600px) {
+  .headshot {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1024px) {
+  .headshot {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 /* ===== Projects Section ===== */
 #projects {
   padding: 4rem 8%;
