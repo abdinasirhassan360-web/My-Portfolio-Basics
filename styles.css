@@ -106,9 +106,9 @@ nav ul li a:hover {
   object-fit: cover;    /* crops neatly without distortion */
   border: 3px solid #fff; /* white border around it */
   margin-top: 1em;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* soft shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
   margin-bottom: 1rem;
-  filter: brightness(1.2) contrast(1.1);
+  
 }
 /* Layout for larger screens */
 .about-container {
