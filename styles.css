@@ -1,159 +1,176 @@
-/* Global styles */
+/* ===== Global Reset ===== */
 body {
-    background-color: #785b23; /* restaurant background */
-    color: #db932c;            /* restaurant text color */
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #785b23; /* restaurant background */
+  color: #db932c; /* restaurant text color */
 }
 
-/* Navigation bar */
+/* ===== Navigation Bar ===== */
 nav {
-    background-color: #202020; /* charcoal nav */
-    padding: 1em 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background-color: #202020; /* charcoal nav */
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0 2em;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 5%;
 }
 
 nav ul li {
-    margin: 0 1.5em;
+  margin: 0 1.2em;
 }
 
 nav ul li a {
-    color: #db932c; /* golden-orange links */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    font-family: 'Nunito', sans-serif;
-    transition: color 0.2s;
+  color: #db932c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
 }
 
 nav ul li a:hover {
-    color: white; /* clean contrast hover */
+  color: white;
 }
 
-
-/* Intro / Hero Section */
+/* ===== Hero Section ===== */
 .intro {
-  position: relative;
-  background-image: url('images/background-image-portfolio.svg');
-  background-size: 100% auto;   /* 👈 fills width, no zoom */
-  background-repeat: no-repeat;
-  background-position: top center;
-  color: white;
-  min-height: 100vh;
+  background: url("images/background-image-portfolio.svg") no-repeat center center/cover;
+  min-height: 60vh; /* not too tall */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-/* optional overlay for better text readability */
-.intro::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4); /* dark overlay */
-    z-index: 0;
-}
-.intro * {
-    position: relative;
-    z-index: 1;
+  align-items: flex-start;
+  padding: 3rem 8%;
+  color: white;
 }
 
 .intro h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: clamp(2rem, 5vw, 3.5rem); /* scales with screen */
-    margin: 0;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
 }
 
 .intro h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: clamp(1rem, 3.5vw, 2rem);
-    margin: 10px 0 0;
-    color: #db932c;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #db932c;
+  margin: 0;
 }
 
-/* Projects Section */
+/* ===== Projects Section ===== */
 #projects {
-    padding: 5% 5%;
-    text-align: center;
+  padding: 4rem 8%;
+  margin-top: 0; /* remove empty gap after hero */
 }
 
 #projects h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    margin-bottom: 1em;
-    color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
 }
 
-/* Single Project Card */
 .project-card {
-    max-width: 600px;   /* keeps it neat on large screens */
-    margin: 0 auto;     /* center horizontally */
-    padding: 5%;
-    background: #2a2a2a;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: #202020;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .project-card img {
-    width: 100%;       /* responsive image */
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1em;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .project-card h3 {
-    color: #fff;
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin: 0.5rem 0;
+  color: #db932c;
 }
 
 .project-card p {
-    color: #db932c;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.project-links {
+  margin-top: 1rem;
 }
 
 .project-links a {
-    display: inline-block;
-    margin: 0.5em 1em;
-    text-decoration: none;
-    color: #db932c;
-    font-weight: bold;
-    transition: color 0.3s;
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #db932c;
+  color: #202020;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
 .project-links a:hover {
-    color: #fff;
+  background: white;
+  color: #202020;
 }
 
-/* Responsive tweaks for phones */
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center; /* center nav items on tablets/phones */
+    flex-wrap: wrap;
+  }
+
+  .intro {
+    min-height: 50vh;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+
+  #projects {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
-    nav ul {
-        gap: 1em;
-    }
+  .intro {
+    min-height: 40vh;
+    padding: 1.5rem 1rem;
+  }
 
-    .intro {
-        padding: 25% 5%;
-    }
+  .intro h1 {
+    font-size: 1.8rem;
+  }
 
-    .project-card {
-        padding: 8%;
-    }
+  .intro h2 {
+    font-size: 1.1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
 }
- 
