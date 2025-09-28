@@ -11,23 +11,20 @@ body {
 nav {
   background-color: #202020;
   padding: 1em 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: sticky;
   top: 0;
-  max-width: 1200px; /* limits horizontal expansion */
-  margin: 0 auto;    /* centers navbar */
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   z-index: 1000;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* pushes headshot left, links right */
   width: 100%;
 }
-
 
 .headshot-nav {
   width: 40px;
@@ -46,7 +43,7 @@ nav {
 }
 
 .nav-links a {
-  color: #db932c; /* original orange color */
+  color: #db932c;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
@@ -56,6 +53,7 @@ nav {
 .nav-links a:hover {
   color: white;
 }
+
 
 /* ===== About Section ===== */
 .about-container {
