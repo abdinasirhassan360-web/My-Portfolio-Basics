@@ -232,3 +232,49 @@ nav {
     font-size: 0.9rem;
   }
 }
+#contact {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#contact p {
+  margin-bottom: 1.5rem;
+  color: #db932c; /* orange text */
+  font-size: 1.1rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #db932c; /* orange */
+  transition: color 0.2s, transform 0.2s;
+}
+
+.contact-link i {
+  font-size: 1.5rem;
+  color: #db932c;
+  transition: color 0.2s;
+}
+
+.contact-link:hover,
+.contact-link:hover i {
+  color: white;
+  transform: scale(1.05);
+}
