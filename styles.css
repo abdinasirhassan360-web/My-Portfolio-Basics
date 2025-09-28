@@ -84,7 +84,6 @@ nav ul li a:hover {
   margin: 0;
 }
 
-
 /* ===== Projects Section ===== */
 #projects {
   padding: 4rem 8%;
@@ -115,11 +114,11 @@ nav ul li a:hover {
 
 .project-card h3 {
   margin: 0.5rem 0;
-  color: #db932c;
+  color: white; /* ✅ title stays white */
 }
 
 .project-card p {
-  color: #ccc;
+  color: #db932c; /* ✅ description is orange */
   font-size: 1rem;
 }
 
@@ -130,19 +129,17 @@ nav ul li a:hover {
 .project-links a {
   display: inline-block;
   margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #db932c;
-  color: #202020;
+  color: #db932c; /* ✅ orange text links */
   font-weight: bold;
-  border-radius: 6px;
   text-decoration: none;
-  transition: background 0.2s;
+  font-size: 1rem;
+  transition: color 0.2s;
 }
 
 .project-links a:hover {
-  background: white;
-  color: #202020;
+  color: white; /* clean hover effect */
 }
+
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
