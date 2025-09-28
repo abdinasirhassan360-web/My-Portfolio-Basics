@@ -46,7 +46,7 @@ nav ul li a:hover {
 /* Intro / Hero Section */
 .intro {
   position: relative;
-  background-image: url('images/background-image-portfolio');
+  background-image: url('images/background-image-portfolio.svg');
   background-size: 100% auto;   /* 👈 fills width, no zoom */
   background-repeat: no-repeat;
   background-position: top center;
