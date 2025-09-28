@@ -81,7 +81,7 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ADD8E6;      /* light blue border */
-  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.6); /* light blue glow */
+  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.8); /* light blue glow */
   margin-top: 1em;
   margin-bottom: 1rem;
 }
