@@ -13,6 +13,7 @@ nav {
   padding: 1em 5%;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* headshot far left, links far right */
   position: sticky;
   top: 0;
   width: 100%;
@@ -31,7 +32,6 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
-  margin-right: auto; /* pushes links to the right */
 }
 
 .nav-links {
@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-links a {
-  color: #db932c;
+  color: #db932c; /* original orange color */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
