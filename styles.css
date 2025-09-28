@@ -88,11 +88,13 @@ nav ul li a:hover {
 /* Bigger text on laptops and desktops */
 @media (min-width: 768px) {
   .intro h1 {
-    font-size: 4rem; /* much larger on laptops */
+    font-size: 6rem; /* much larger on laptops */
+    
   }
 
   .intro h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
   }
 }
 
