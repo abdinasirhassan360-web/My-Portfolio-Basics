@@ -9,6 +9,36 @@ body {
 
 /* ===== Navigation Bar ===== */
 nav {
+  background-color: #202020;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes items apart */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.headshot {
+  width: 40px;         /* smaller for nav bar */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: none;
+}
+
+nav {
   background-color: #202020; /* charcoal nav */
   padding: 1em 0;
   position: sticky;
