@@ -11,6 +11,9 @@ body {
 nav {
   background-color: #202020;
   padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers nav container */
   position: sticky;
   top: 0;
   width: 100%;
@@ -20,13 +23,11 @@ nav {
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* headshot left, links right */
   width: 100%;
-  max-width: 1200px; /* match main content width */
-  margin: 0 auto;    /* centers navbar */
-  padding: 0 5%;     /* same horizontal padding as main content */
+  padding: 0 5%; /* makes navbar match content width */
+  max-width: 1200px; /* keeps navbar neat on large screens */
 }
-
 
 .headshot-nav {
   width: 40px;
@@ -45,7 +46,7 @@ nav {
 }
 
 .nav-links a {
-  color: #db932c;
+  color: #db932c; /* orange links */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
