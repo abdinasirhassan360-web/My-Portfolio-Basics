@@ -60,7 +60,7 @@ nav ul li a:hover {
   content: "";
   position: absolute;
   inset: 0; /* top:0; right:0; bottom:0; left:0; */
-  background-color: rgba(72, 55, 21, 0.78); /* #483715 at ~78% opacity */
+  background-color: rgba(72, 55, 21, 0.6); /* #483715 at ~60% opacity */
   z-index: 1;
 }
 
