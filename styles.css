@@ -147,9 +147,12 @@ nav ul li a:hover {
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
   nav ul {
-    justify-content: center; /* center nav items on tablets/phones */
+    justify-content: flex-end; /* ✅ keep links on the right */
     flex-wrap: wrap;
+    padding-right: 5%; /* keep some spacing from the edge */
   }
+}
+
 
   .intro {
     min-height: 50vh;
