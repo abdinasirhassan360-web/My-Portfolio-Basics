@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     background-color: #785b23; /* restaurant background */
     color: #db932c;            /* restaurant text color */
@@ -6,57 +7,23 @@ body {
     padding: 0;
 }
 
+/* Navigation bar */
 nav {
     background-color: #202020; /* charcoal nav */
-    padding: 1em 0;
+    padding: 1em 5%;   /* % padding for responsiveness */
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.intro {
-    padding: 100px 50px;
-    text-align: center;
-    background-image: url('images/background-image-portfolio.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
-    margin: 0;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* makes text readable */
-}
-
-.intro h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5em;
-    margin: 10px 0 0;
-    color: #db932c;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-}
-
-
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* push links to right */
     margin: 0;
-    padding: 0 2em;
-}
-
-nav ul li {
-    margin: 0 1.5em;
+    padding: 0;
+    gap: 2em; /* spacing between links */
 }
 
 nav ul li a {
@@ -69,85 +36,120 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white; /* clean contrast hover */
+    color: white; /* hover contrast */
 }
-/* Projects Section */
-#projects {
-    padding: 4em 2em;
-    background: #202020; /* same dark as nav */
+
+/* Intro / Hero Section */
+.intro {
+    padding: 15% 5%; /* responsive padding */
     text-align: center;
-    color: white;
-}
+    background-image: url('images/hero-bg.jpg'); /* replace with your bg image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
-/* Section title */
-#projects h2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: #db932c;
-    margin-bottom: 2em;
-    font-size: 2em;
-}
-
-/* Flex/Grid container */
-#projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-/* Project card */
+/* optional overlay for better text readability */
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4); /* dark overlay */
+    z-index: 0;
+}
+.intro * {
+    position: relative;
+    z-index: 1;
+}
+
+.intro h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* scales with screen */
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.intro h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1rem, 3.5vw, 2rem);
+    margin: 10px 0 0;
+    color: #db932c;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* Projects Section */
+#projects {
+    padding: 5% 5%;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+/* Single Project Card */
 .project-card {
-    background: #785b23; /* matches your body bg */
+    max-width: 600px;   /* keeps it neat on large screens */
+    margin: 0 auto;     /* center horizontally */
+    padding: 5%;
+    background: #2a2a2a;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5em;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Thumbnail */
 .project-card img {
-    width: 100%;
+    width: 100%;       /* responsive image */
+    height: auto;
     border-radius: 8px;
     margin-bottom: 1em;
 }
 
-/* Project title */
 .project-card h3 {
-    color: white;
-    margin-bottom: 0.5em;
-    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
-/* Description text */
 .project-card p {
-    font-size: 1em;
     color: #db932c;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 1.2em;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
 
-/* Links */
 .project-links a {
     display: inline-block;
-    margin: 0.5em;
-    padding: 0.6em 1.2em;
-    background: #202020;
-    color: #db932c;
-    border-radius: 6px;
+    margin: 0.5em 1em;
     text-decoration: none;
+    color: #db932c;
     font-weight: bold;
-    font-size: 0.95em;
-    font-family: 'Nunito', sans-serif;
-    transition: all 0.2s ease;
+    transition: color 0.3s;
 }
 
 .project-links a:hover {
-    background: #db932c;
-    color: white;
+    color: #fff;
 }
+
+/* Responsive tweaks for phones */
+@media (max-width: 480px) {
+    nav ul {
+        gap: 1em;
+    }
+
+    .intro {
+        padding: 25% 5%;
+    }
+
+    .project-card {
+        padding: 8%;
+    }
+}
+ 
