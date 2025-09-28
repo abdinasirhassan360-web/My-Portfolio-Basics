@@ -108,6 +108,7 @@ nav ul li a:hover {
   margin-top: 1em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* soft shadow for depth */
   margin-bottom: 1rem;
+  filter: brightness(1.2) contrast(1.1);
 }
 /* Layout for larger screens */
 .about-container {
