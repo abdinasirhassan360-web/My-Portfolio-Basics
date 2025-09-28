@@ -41,20 +41,20 @@ nav ul li a:hover {
 
 /* Intro / Hero Section */
 .intro {
-    padding: 15% 5%; /* responsive padding */
-    text-align: center;
-    background-image: url('images/background-image-portfolio'); /* replace with your bg image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  position: relative;
+  background-image: url('images/background-image-portfolio');
+  background-size: 100% auto;   /* 👈 fills width, no zoom */
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 /* optional overlay for better text readability */
 .intro::before {
