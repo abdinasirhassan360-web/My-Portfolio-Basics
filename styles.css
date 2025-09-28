@@ -10,21 +10,23 @@ body {
 /* ===== Navigation Bar ===== */
 nav {
   background-color: #202020;
-  padding: 1em 5%;
+  padding: 1em 0;
   position: sticky;
   top: 0;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   z-index: 1000;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* pushes headshot left, links right */
+  justify-content: space-between;
   width: 100%;
+  max-width: 1200px; /* match main content width */
+  margin: 0 auto;    /* centers navbar */
+  padding: 0 5%;     /* same horizontal padding as main content */
 }
+
 
 .headshot-nav {
   width: 40px;
