@@ -106,7 +106,7 @@ nav ul li a:hover {
   object-fit: cover;    /* crops neatly without distortion */
   border: 3px solid #fff; /* white border around it */
   margin-top: 1em;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+  box-shadow: none;
   margin-bottom: 1rem;
   
 }
