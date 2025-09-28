@@ -74,15 +74,18 @@ nav {
 }
 
 .headshot-about {
+  position: relative;             /* makes z-index work */
+  z-index: 2;                     /* stays above brown overlay */
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ADD8E6;
-  border-shadow: 0 4px 8px rgba(173, 216, 230, 0.3);
+  border: 3px solid #ADD8E6;      /* light blue border */
+  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.6); /* light blue glow */
   margin-top: 1em;
   margin-bottom: 1rem;
 }
+
 
 /* ===== Hero Section ===== */
 .intro {
@@ -184,6 +187,7 @@ nav {
 }
 
 /* ===== Responsive Design ===== */
+/* Tablet and up */
 @media (min-width: 600px) {
   .headshot-about {
     width: 180px;
@@ -191,13 +195,13 @@ nav {
   }
 }
 
+/* Laptops and desktops */
 @media (min-width: 1024px) {
   .headshot-about {
     width: 220px;
     height: 220px;
   }
 }
-
 @media (max-width: 768px) {
   nav ul {
     justify-content: flex-end;
