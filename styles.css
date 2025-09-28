@@ -43,7 +43,7 @@ nav ul li a:hover {
 .intro {
     padding: 15% 5%; /* responsive padding */
     text-align: center;
-    background-image: url('images/hero-bg.jpg'); /* replace with your bg image */
+    background-image: url('images/background-image-portfolio'); /* replace with your bg image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
