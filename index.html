@@ -16,13 +16,30 @@
     <nav>
   <div class="nav-container">
     <img src="images/headshot.jpg" alt="Ali Hassan headshot" class="headshot-nav">
+    
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="openPanel()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Side Panel for Mobile Links -->
+  <div id="sidePanel" class="side-panel">
+    <span class="close-btn" onclick="closePanel()">&times;</span>
+    <a href="#about" onclick="closePanel()">About</a>
+    <a href="#projects" onclick="closePanel()">Projects</a>
+    <a href="#contact" onclick="closePanel()">Contact</a>
   </div>
 </nav>
+
 
     <main>
         <!-- ===== About Section ===== -->
@@ -88,6 +105,15 @@
   </div>
 
 </section>
+<script>
+  function openPanel() {
+    document.getElementById("sidePanel").style.width = "250px";
+  }
+
+  function closePanel() {
+    document.getElementById("sidePanel").style.width = "0";
+  }
+</script>
 
 </body>
 </html>
